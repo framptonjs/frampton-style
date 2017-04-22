@@ -13,10 +13,9 @@ import setStyle from './set-style';
  */
 export default curry(function apply_styles(props: StyleMap, element: HTMLElement): void {
   for (let key in props) {
-    const value = props[key];
-
+    const value: string = props[key];
     if (isSomething(value)) {
-      setStyle(element, key, value);
+      setStyle(key, value, element);
     } else {
       removeStyle(element, key);
     }

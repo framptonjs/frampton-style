@@ -1,4 +1,5 @@
 import './add-class.spec';
+import './apply-styles.spec';
 import './closest.spec';
 import './contains.spec';
 import './current-value.spec';
