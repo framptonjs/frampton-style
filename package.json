@@ -1,0 +1,35 @@
+{
+  "name": "@frampton/style",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./dist/bundles/style.js",
+  "typings": "./dist/index.d.ts",
+  "scripts": {
+    "build": "rm -rf ./dist/; tsc -p ./tsconfig.json; webpack --config webpack.config.js;",
+    "build:test": "rm -rf ./testing/; tsc -p ./tsconfig.test.json; webpack --config webpack.test.config.js;",
+    "test": "npm run build:test; karma start;"
+  },
+  "author": "Kevin Greene <hightimesteddy@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/framptonjs/frampton-style.git"
+  },
+  "files": [
+    "dist/"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai": "3.4.34",
+    "@types/mocha": "2.2.39",
+    "chai": "3.5.0",
+    "karma": "1.6.0",
+    "karma-mocha": "1.3.0",
+    "karma-phantomjs-launcher": "1.0.4",
+    "mocha": "3.2.0",
+    "typescript": "2.2.2",
+    "webpack": "2.4.1"
+  },
+  "peerDependencies": {
+    "@frampton/core": "0.0.6"
+  }
+}
