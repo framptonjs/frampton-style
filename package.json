@@ -1,6 +1,6 @@
 {
   "name": "@frampton/style",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "main": "./dist/bundles/style.js",
   "typings": "./dist/index.d.ts",
@@ -12,7 +12,7 @@
   "author": "Kevin Greene <hightimesteddy@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/framptonjs/frampton-style.git"
+    "url": "https://github.com/framptonjs/style.git"
   },
   "files": [
     "dist/"
