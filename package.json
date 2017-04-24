@@ -17,6 +17,12 @@
   "files": [
     "dist/"
   ],
+  "keywords": [
+    "functional",
+    "reactive",
+    "CSS",
+    "style"
+  ],
   "license": "MIT",
   "devDependencies": {
     "@types/chai": "3.4.34",

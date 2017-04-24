@@ -2,9 +2,6 @@ import { curry, Curried2Result } from '@frampton/core';
 import supported from './supported';
 
 
-const style = window.getComputedStyle;
-
-
 /**
  * current :: DomNode -> String -> String
  *
@@ -16,5 +13,9 @@ const style = window.getComputedStyle;
  * @returns {String} String representation of current property value
  */
 export default curry(function current_value(prop: string, element: HTMLElement): string {
-  return style(element).getPropertyValue(supported(prop));
+  if (window !== undefined) {
+    return window.getComputedStyle(element).getPropertyValue(supported(prop));
+  } else {
+    return null;
+  }
 });

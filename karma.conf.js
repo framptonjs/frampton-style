@@ -13,7 +13,7 @@ module.exports = function(config) {
       'karma-phantomjs-launcher'
     ],
 
-    //logLevel: config.LOG_DEBUG,
+    logLevel: config.LOG_DEBUG,
 
     phantomjsLauncher: {
       // Have phantomjs exit if a ResourceError is encountered (useful if karma exits without killing phantom)
