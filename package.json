@@ -1,6 +1,6 @@
 {
   "name": "@frampton/style",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A library for working with CSS selectors in JS",
   "main": "./dist/bundles/style.js",
   "typings": "./dist/index.d.ts",
